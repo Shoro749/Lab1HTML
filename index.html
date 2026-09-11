@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Базова навчальна сторінка з HTML та CSS">
+    <title>Моя навчальна сторінка</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Title</h1>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <p class="sus"></p>
-    <p class="sus">
-        <p id="ad"></p>
-    </p>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="#top">WEB<span>START</span></a>
+            <nav aria-label="Головна навігація">
+                <a href="#about">Про сторінку</a>
+                <a href="#topics">Теми</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero container" id="about">
+            <div class="hero-copy">
+                <p class="eyebrow">Лабораторна робота №1</p>
+                <h1>Починаємо створювати вебсторінки</h1>
+                <p class="hero-text">HTML формує структуру, CSS додає стиль, а JavaScript робить сторінку інтерактивною.</p>
+                <a class="button" href="#topics">Переглянути теми</a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <span class="code-mark">&lt;/&gt;</span>
+                <span class="spark spark-one"></span>
+                <span class="spark spark-two"></span>
+            </div>
+        </section>
+
+        <section class="topics" id="topics">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Основи веброзробки</p>
+                    <h2>Три кроки до першої сторінки</h2>
+                </div>
+                <div class="topic-grid">
+                    <article class="topic-card">
+                        <span class="topic-number">01</span>
+                        <h3>HTML</h3>
+                        <p>Створює логічну структуру документа: заголовки, текст, посилання та зображення.</p>
+                    </article>
+                    <article class="topic-card">
+                        <span class="topic-number">02</span>
+                        <h3>CSS</h3>
+                        <p>Допомагає налаштувати кольори, відступи, шрифти та адаптивність сторінки.</p>
+                    </article>
+                    <article class="topic-card">
+                        <span class="topic-number">03</span>
+                        <h3>Практика</h3>
+                        <p>Найкращий спосіб навчитися — створювати невеликі проєкти та експериментувати.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+        <div class="container footer-content">
+            <p>Навчальна сторінка з HTML та CSS</p>
+            <p>2026</p>
+        </div>
+    </footer>
 </body>
 
 </html>
