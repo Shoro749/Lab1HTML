@@ -1,15 +1,4 @@
 :root {
-    --ink: #17202a;
-    --muted: #65727e;
-    --paper: #f7f4ed;
-    --surface: #fffdf8;
-    --accent: #e4572e;
-    --accent-dark: #b83c1c;
-    --line: #ddd8ce;
-
-    --font-family-base: Georgia, "Times New Roman", serif;
-    --font-size-base: 16px;
-
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
@@ -18,20 +7,7 @@
     --border-radius: 10px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    color: var(--ink);
-    background: var(--surface);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-}
-
-.container {
+.plans > .container {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
@@ -40,6 +16,23 @@ body {
 
     width: 100%;
     margin: 0 auto;
+}
+
+.plans-heading {
+    margin: 72px auto var(--spacing-lg);
+    text-align: center;
+}
+
+.plans-heading h1 {
+    max-width: none;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: normal;
+}
+
+.plans-heading p {
+    color: var(--muted);
 }
 
 .subCard {
@@ -71,7 +64,6 @@ body {
     background: var(--accent);
     color: var(--surface);
 
-    font-family: var(--font-family-base);
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.4;
@@ -86,9 +78,11 @@ body {
     font-size: 1.7rem;
 }
 
-.subCard h4 {
+.subCard h2 {
     margin-bottom: 5px;
     color: var(--accent-dark);
+    font-size: 18px;
+    margin-top: 15px;
 }
 
 .subCard ul {
@@ -121,23 +115,8 @@ body {
     cursor: pointer;
 }
 
-/* Sub header */
-
-header {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-header h2 {
-    margin-bottom: 5px;
-}
-
-header p {
-    color: var(--muted);
-}
-
 @media (max-width: 768px) {
-    .container {
+    .plans > .container {
         flex-direction: column;
         align-items: center;
     }
